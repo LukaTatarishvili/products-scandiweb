@@ -16,22 +16,18 @@
                     <?php 
             if (strpos(URL,'create') == false) {
             ?>
+                <a href="create.php" class="btn btn-primary mr-3">ADD</a>
+                <button id="delete-product-btn" class="btn btn-danger">MASS DELETE</button>
 
-                    <a href="create.php" class="btn btn-primary mr-3">ADD</a>
-                    <button id="delete-product-btn" class="btn btn-danger">MASS DELETE</button>
-
-                    <?php 
+                <?php 
             }else{ 
             ?>
-                    <form id="product_form" method="POST">
-                        <div>
-                            <input type="button" class="btn btn-primary mr-3 store-product-btn" value="Save" name="submit">
-                            <a href="./" class="btn btn-secondary">Cancel</a>
-                        </div>
-
-                        <?php } ?>
-
-
+                <form id="product_form" method="POST">
+                    <div>
+                        <input type="button" class="btn btn-primary mr-3 store-product-btn" value="Save" name="submit">
+                        <a href="./" class="btn btn-secondary">Cancel</a>
+                    </div>
+                    <?php } ?>
 
                 </ul>
             </nav>
