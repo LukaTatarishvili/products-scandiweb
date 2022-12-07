@@ -46,7 +46,7 @@
                 <select class="form-control" name="product_type" id="productType">
                     <option value="0" selected disabled hidden>Select type</option>
                     <option id="dvd" value="1">DVD</option>
-                    <option id="furniture" value="2">furniture</option>
+                    <option id="furniture" value="2">Furniture</option>
                     <option id="book" value="3">Book</option>
                 </select>
             </div>
@@ -118,7 +118,7 @@ $("#productType").change(function() {
 $(document).on('click', '.store-product-btn', function() {
 
     var action = "store";
-    let data = $("#create-form").serialize()
+    let data = $("#product_form").serialize()
     if (data) {
         
     }
